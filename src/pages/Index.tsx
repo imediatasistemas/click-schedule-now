@@ -19,11 +19,20 @@ const Index = () => {
             Sua agenda online em poucos cliques. De WhatsApp bagunçado para agenda profissional em 5 minutos.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3">
+            <Button 
+              size="lg" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3"
+              onClick={() => window.alert('Redirecionando para cadastro...')}
+            >
               <Calendar className="mr-2 h-5 w-5" />
               Começar Grátis
             </Button>
-            <Button variant="outline" size="lg" className="px-8 py-3">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="px-8 py-3"
+              onClick={() => window.alert('Abrindo demonstração...')}
+            >
               Ver Demo
             </Button>
           </div>
@@ -179,7 +188,11 @@ const Index = () => {
                     Link personalizado
                   </li>
                 </ul>
-                <Button className="w-full mt-6" variant="outline">
+                <Button 
+                  className="w-full mt-6" 
+                  variant="outline"
+                  onClick={() => window.alert('Iniciando plano gratuito...')}
+                >
                   Começar Grátis
                 </Button>
               </CardContent>
@@ -220,7 +233,10 @@ const Index = () => {
                     Relatórios básicos
                   </li>
                 </ul>
-                <Button className="w-full mt-6 bg-primary hover:bg-primary/90">
+                <Button 
+                  className="w-full mt-6 bg-primary hover:bg-primary/90"
+                  onClick={() => window.alert('Iniciando teste gratuito do plano profissional...')}
+                >
                   Começar Teste Grátis
                 </Button>
               </CardContent>
@@ -258,7 +274,11 @@ const Index = () => {
                     Suporte prioritário
                   </li>
                 </ul>
-                <Button className="w-full mt-6" variant="outline">
+                <Button 
+                  className="w-full mt-6" 
+                  variant="outline"
+                  onClick={() => window.alert('Iniciando teste gratuito do plano premium...')}
+                >
                   Começar Teste Grátis
                 </Button>
               </CardContent>
@@ -277,11 +297,21 @@ const Index = () => {
             Junte-se a mais de 2.000 profissionais que já transformaram seus negócios com o AgendaFácil
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" variant="secondary" className="px-8 py-3">
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="px-8 py-3"
+              onClick={() => window.alert('Redirecionando para cadastro gratuito...')}
+            >
               <Zap className="mr-2 h-5 w-5" />
               Começar Agora - Grátis
             </Button>
-            <Button size="lg" variant="outline" className="px-8 py-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="px-8 py-3 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              onClick={() => window.alert('Abrindo chat com especialista...')}
+            >
               Falar com Especialista
             </Button>
           </div>
